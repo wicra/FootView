@@ -1,26 +1,30 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tournoi de Football</title>
-    <link rel="manifest" href="manifest.json" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- TITRE -->
+    <title>Tournoi de Football - Accueil</title>
+    
+    <!-- MANIFEST ET FAVICON -->
+    <link rel="manifest" href="manifest.json">
+    <link id="favicon" rel="icon" type="image/png" href="asset/img/ballon-de-foot.png">
+    
+    <!-- STYLES -->
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <!-- SCRIPTS EXTERNES -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    />
+    
+    <!-- POLICES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <!-- STYLES PERSONNALISÉS -->
     <style>
       * {
         margin: 0;
@@ -333,12 +337,13 @@
     </style>
   </head>
   <body>
+	<!-- CONTENU PRINCIPAL -->
     <div class="container">
       <div class="match-header">
         <div class="match-number">
           Match <span id="currentMatchNumber">1</span>/12
         </div>
-        <h1 class="match-title">Match de Football</h1>
+        <h1 class="match-title">Tournoi 2e Edition</h1>
         <div id="matchStatus" class="status-indicator"></div>
       </div>
 
@@ -353,7 +358,7 @@
         </div>
 
         <div class="match-center">
-          <div class="timer" id="timer">04:00</div>
+          <div class="timer" id="timer">10:00</div>
           <div class="controls">
             <button
               class="control-btn"
@@ -379,37 +384,29 @@
       </div>
 
       <div class="match-navigation">
-        <a class="control-btn" href="user_view.php" target="_blank"
-          >Vue des utilisateurs</a
-        >
+        <a class="control-btn" href="user_view.php" target="_blank">Vue Debut</a>
         <button class="control-btn" onclick="previousMatch()">
           Match Précédent
         </button>
         <button class="control-btn" onclick="nextMatch()">Match Suivant</button>
-        <a class="control-btn" href="classement.php" target="_blank"
-          >Vue des classements</a
-        >
+        
 
-        <button class="control-btn" onclick="triggerClickOnPageA()">Vue 1</button>
-        <button class="control-btn" onclick="triggerClickOnPageB()">Vue 2</button>
+        <button class="control-btn" onclick="triggerClickOnPageA()">Vue User</button>
+        <button class="control-btn" onclick="triggerClickOnPageB()">Vue Class</button>
       </div>
     </div>
     
-    <script src="app.js"></script>
-
-
+    <!-- SCRIPTS -->
+	<script src="app.js"></script>
     <script>
         function triggerClickOnPageA() {
             // Déclencher l'événement dans le localStorage
             localStorage.setItem('simulate_click', 'true');
         }
-    
         function triggerClickOnPageB() {
             // Déclencher l'événement dans le localStorage
             localStorage.setItem('simulate_click1', 'true');
         }
     </script>
-
-    
   </body>
 </html>

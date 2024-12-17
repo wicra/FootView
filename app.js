@@ -1,6 +1,6 @@
 let timerInterval;
 let running = false;
-let timeLeft = 240; // 4 minutes in seconds
+let timeLeft = 600; // 10 minutes in seconds
 let matches = [];
 let currentMatchIndex = 0;
 
@@ -114,7 +114,7 @@ function toggleTimer() {
 
 function resetMatch() {
   clearInterval(timerInterval);
-  timeLeft = 240;
+  timeLeft = 600;
   document.getElementById("timer").textContent = formatTime(timeLeft);
   document.getElementById("timerButton").textContent = "Démarrer";
 
@@ -212,7 +212,7 @@ window.addEventListener("storage", function (event) {
     if (storedMatches && storedCurrentMatch) {
       matches = JSON.parse(storedMatches);
       currentMatchIndex = parseInt(storedCurrentMatch) - 1;
-      timeLeft = storedTimeLeft ? parseInt(storedTimeLeft) : 240;
+      timeLeft = storedTimeLeft ? parseInt(storedTimeLeft) : 600;
       const wasRunning = running;
       running = storedRunning === "true";
       displayCurrentMatch();
