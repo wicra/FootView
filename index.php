@@ -36,7 +36,6 @@
         font-family: "Roboto", sans-serif;
         min-height: 100vh;
         display: flex;
-		flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: black;
@@ -389,7 +388,6 @@
 
       <div class="match-navigation">
         <a class="control-btn" href="user_view.php" target="_blank">Vue Debut</a>
-        <a class="control-btn" href="classement_admin.php" target="_blank">Adm Class</a>
         <button class="control-btn" onclick="previousMatch()">Match Précéd</button>
         <button class="control-btn" onclick="nextMatch()">Match Suivant</button>
         
@@ -399,15 +397,9 @@
 
       </div>
     </div>
-
-	<!-- CLASSEMENT ADMIN -->
-	<div id="classementContainer">
-		<?php include 'classement_admin.php'; ?>
-	</div>
-
     
     <!-- SCRIPTS -->
-	<script src="app.js"></script>
+    <script src="app.js"></script>
     <script>
         function triggerClickOnPageA() {
             // Déclencher l'événement dans le localStorage
@@ -417,7 +409,7 @@
             // Déclencher l'événement dans le localStorage
             localStorage.setItem('simulate_click1', 'true');
         }
-		function triggerClickOnPageC() {
+        function triggerClickOnPageC() {
             // Déclencher l'événement dans le localStorage
             localStorage.setItem('simulate_click2', 'true');
         }
