@@ -55,8 +55,8 @@
         .container {
         display: flex;
         align-items: stretch;
-        width: 100%;
-        max-width: 1800px;
+        width: 95%;
+        max-width: 1200px;
         background: rgba(0, 0, 0, 0.3);
         padding: 2vh 2vw 2vh 0;
         border-radius: 30px;
@@ -115,7 +115,7 @@
             overflow: hidden;
         }
         th, td {
-            padding: 18px;
+            padding: 10px;
             text-align: center;
             color: white;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -179,6 +179,16 @@
             font-family: "Orbitron", sans-serif;
             font-size: 10px;
             text-align: center;
+        }
+
+        
+        @media (min-width: 1800px) {
+            .container {
+                max-width: 1800px;
+            }
+            th, td {
+            padding: 18px  !important;
+            }
         }
     </style>
 </head>

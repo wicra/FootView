@@ -72,8 +72,8 @@
         }
 
         .container {
-            width: 100%;
-            max-width: 1800px;
+            width: 95%;
+            max-width: 1200px;
             background: rgba(0, 0, 0, 0.3);
             padding: 3rem;
             border-radius: 30px;
@@ -179,7 +179,7 @@
         }
 
         .team-name1 {
-            font-size: 4rem;
+            font-size: 2.4rem;
             font-weight: 900;
             margin-bottom: 1.5rem;
             font-family: "Permanent Marker", cursive;
@@ -190,7 +190,7 @@
         }
 
         .team-name2 {
-            font-size: 4rem;
+            font-size: 2.4rem;
             font-weight: 900;
             margin-bottom: 1.5rem;
             font-family: "Permanent Marker", cursive;
@@ -202,7 +202,7 @@
         }
 
         .team-score2 {
-            font-size: 11rem;
+            font-size: 6rem;
             font-weight: 900;
             font-family: "Orbitron", sans-serif;
 
@@ -212,7 +212,7 @@
             transition: all 0.3s ease;
         }
         .team-score1 {
-            font-size: 11rem;
+            font-size: 6rem;
             font-weight: 900;
             font-family: "Orbitron", sans-serif;
 
@@ -267,6 +267,22 @@
             .timer {
               font-size: 3.5rem;
             }
+        }
+
+        @media (min-width: 1800px) {
+            .container {
+                max-width: 1800px !important;
+            }
+            
+        .team-name1,.team-name2 {
+            font-size: 3rem !important;
+        }
+
+        .team-score2, .team-score1 {
+            font-size: 8rem !important;
+        }
+
+
         }
 
 		/* Styles pour la signature */
