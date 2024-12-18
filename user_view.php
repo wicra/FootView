@@ -179,7 +179,7 @@
         }
 
         .team-name1 {
-            font-size: 6rem;
+            font-size: 4rem;
             font-weight: 900;
             margin-bottom: 1.5rem;
             font-family: "Permanent Marker", cursive;
@@ -190,7 +190,7 @@
         }
 
         .team-name2 {
-            font-size: 6rem;
+            font-size: 4rem;
             font-weight: 900;
             margin-bottom: 1.5rem;
             font-family: "Permanent Marker", cursive;
@@ -202,7 +202,7 @@
         }
 
         .team-score2 {
-            font-size: 14rem;
+            font-size: 11rem;
             font-weight: 900;
             font-family: "Orbitron", sans-serif;
 
@@ -212,7 +212,7 @@
             transition: all 0.3s ease;
         }
         .team-score1 {
-            font-size: 14rem;
+            font-size: 11rem;
             font-weight: 900;
             font-family: "Orbitron", sans-serif;
 
