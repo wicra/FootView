@@ -6,7 +6,7 @@
             "team2": "DBC",
             "score1": 3,
             "score2": 3,
-            "played": false
+            "played": true
         },
         {
             "id": 2,
@@ -14,7 +14,7 @@
             "team2": "B2 ET",
             "score1": 2,
             "score2": 3,
-            "played": false
+            "played": true
         },
         {
             "id": 3,
@@ -22,7 +22,7 @@
             "team2": "UB1 GCF",
             "score1": 0,
             "score2": 1,
-            "played": false
+            "played": true
         },
         {
             "id": 4,
@@ -30,7 +30,7 @@
             "team2": "B1 GCF",
             "score1": 3,
             "score2": 3,
-            "played": false
+            "played": true
         },
         {
             "id": 5,
@@ -38,7 +38,7 @@
             "team2": "B1 MSEF",
             "score1": 0,
             "score2": 1,
-            "played": false
+            "played": true
         },
         {
             "id": 6,
@@ -46,7 +46,7 @@
             "team2": "PROF",
             "score1": 3,
             "score2": 2,
-            "played": false
+            "played": true
         },
         {
             "id": 7,
@@ -54,7 +54,7 @@
             "team2": "UB1 GCF",
             "score1": 0,
             "score2": 1,
-            "played": false
+            "played": true
         },
         {
             "id": 8,
@@ -62,7 +62,7 @@
             "team2": "B1 GCF",
             "score1": 0,
             "score2": 1,
-            "played": false
+            "played": true
         },
         {
             "id": 9,
@@ -70,7 +70,7 @@
             "team2": "B1 MSEF",
             "score1": 0,
             "score2": 1,
-            "played": false
+            "played": true
         },
         {
             "id": 10,
@@ -97,5 +97,5 @@
             "played": false
         }
     ],
-    "currentMatch": 7
+    "currentMatch": 10
 }

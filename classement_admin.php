@@ -125,7 +125,7 @@
         border-radius: 5px;
       }
 
-      button {
+      .calculate-button ,.add-button {
         background: rgba(255, 255, 255, 0.1);
         color: white;
         border: none;
@@ -138,7 +138,7 @@
         transition: background 0.3s ease;
       }
 
-      button:hover {
+      .calculate-button:hover ,.add-button:hover  {
         background: rgba(255, 255, 255, 0.2);
       }
     </style>
@@ -170,8 +170,8 @@
       </table>
 
       <div style="text-align: center">
-        <button onclick="ajouterLigne()">Ajouter un Club</button>
-        <button onclick="calculerClassement()">Calculer Classement</button>
+        <button class="add-button" onclick="ajouterLigne()">Ajouter un Club</button>
+        <button class="calculate-button" onclick="calculerClassement()">Calculer Classement</button>
       </div>
     </div>
 

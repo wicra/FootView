@@ -35,7 +35,8 @@
       body {
         font-family: "Roboto", sans-serif;
         min-height: 100vh;
-         display: flex;
+        display: flex;
+		flex-direction: column;
         justify-content: center;
         align-items: center;
         background-color: black;
@@ -56,8 +57,8 @@
       .container {
         width: 95%;
         max-width: 1200px;
+		padding-bottom: 10rem;
         background: rgba(0, 0, 0, 0.3);
-        padding: 3rem;
         border-radius: 30px;
         backdrop-filter: blur(10px);
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
@@ -119,7 +120,7 @@
         font-family: "Orbitron", sans-serif;
         position: absolute;
         left: 50%;
-        top: 50%;
+        top: 15%;
         transform: translate(-50%, -50%);
         font-size: 3rem;
         font-weight: 900;
@@ -237,6 +238,7 @@
         cursor: pointer;
         font-family: "Orbitron", sans-serif;
         text-transform: uppercase;
+		text-decoration: none;
         transition: background 0.3s ease;
       }
 
@@ -337,6 +339,8 @@
     </style>
   </head>
   <body>
+
+
 	<!-- CONTENU PRINCIPAL -->
     <div class="container">
       <div class="match-header">
@@ -385,9 +389,8 @@
 
       <div class="match-navigation">
         <a class="control-btn" href="user_view.php" target="_blank">Vue Debut</a>
-        <button class="control-btn" onclick="previousMatch()">
-          Match Précédent
-        </button>
+        <a class="control-btn" href="classement_admin.php" target="_blank">Adm Class</a>
+        <button class="control-btn" onclick="previousMatch()">Match Précéd</button>
         <button class="control-btn" onclick="nextMatch()">Match Suivant</button>
         
 
@@ -395,6 +398,12 @@
         <button class="control-btn" onclick="triggerClickOnPageB()">Vue Class</button>
       </div>
     </div>
+
+	<!-- CLASSEMENT ADMIN -->
+	<div id="classementContainer">
+		<?php include 'classement_admin.php'; ?>
+	</div>
+
     
     <!-- SCRIPTS -->
 	<script src="app.js"></script>

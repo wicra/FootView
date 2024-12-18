@@ -196,6 +196,8 @@
                 localStorage.setItem('simulate_click', 'false'); // Réinitialiser
             }
         });
+
+
     </script>
 
     <!-- Bouton qui peut être cliqué automatiquement -->
@@ -203,7 +205,7 @@
 
     <div class="container">
       <div class="match-header">
-        <h1 class="match-title">Classement Tournoi 2e Edition</h1>
+        <h1 class="match-title">Classement Tournoi</h1>
       </div>
 
       <div id="classementContainer"></div>
@@ -303,6 +305,10 @@
 
       // Charger le classement au chargement de la page
       document.addEventListener("DOMContentLoaded", chargerClassement);
+
+	  // Actualiser automatiquement les informations du classement toutes les 10 secondes
+	setInterval(chargerClassement, 2000);
+
     </script>
   </body>
 </html>
