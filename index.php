@@ -345,7 +345,7 @@
     <div class="container">
       <div class="match-header">
         <div class="match-number">
-          Match <span id="currentMatchNumber">1</span>/12
+          Match <span id="currentMatchNumber">1</span>/<span id="totalMatchNumber">12</span>
         </div>
         <h1 class="match-title">Tournoi 2e Edition</h1>
         <div id="matchStatus" class="status-indicator"></div>

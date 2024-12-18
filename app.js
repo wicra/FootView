@@ -138,6 +138,8 @@ function displayCurrentMatch() {
   const match = matches[currentMatchIndex];
   document.getElementById("currentMatchNumber").textContent =
     currentMatchIndex + 1;
+  document.getElementById("totalMatchNumber").textContent = matches.length;
+
   document.getElementById("team1").textContent = match.team1;
   document.getElementById("team2").textContent = match.team2;
 

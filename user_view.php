@@ -318,7 +318,7 @@
         <!-- EN-TÊTE DU MATCH -->
         <div class="match-header">
             <div class="match-number">
-                Match <span id="currentMatchNumber">1</span>/12
+                Match <span id="currentMatchNumber">1</span>/<span id="totalMatchNumber">12</span>
             </div>
             <h1 class="match-title">Tournoi 2e Edition</h1>
             <div id="matchStatus" class="status-indicator"></div>
@@ -435,6 +435,7 @@
 
                 document.getElementById("currentMatchNumber").textContent =
                   currentMatchIndex + 1;
+                document.getElementById("totalMatchNumber").textContent = matches.length;
                 document.getElementById("team1").textContent = match.team1;
                 document.getElementById("team2").textContent = match.team2;
                 document.getElementById("score1").textContent = match.score1;
