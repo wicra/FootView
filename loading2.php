@@ -262,7 +262,7 @@
         <!-- SCRIPTS -->
         <script>
             setTimeout(function() {
-                window.location.href = "user_view.php";
+                window.location.href = "pause_midi.php";
             }, 1500);
         </script>
     </body>

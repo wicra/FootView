@@ -262,7 +262,7 @@
         <!-- SCRIPTS -->
         <script>
             setTimeout(function() {
-                window.location.href = "user_view.php";
+                window.location.href = "planning.php";
             }, 1500);
         </script>
     </body>

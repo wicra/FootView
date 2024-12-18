@@ -345,47 +345,74 @@
         </div>
     </div>
 
-    <!-- SCRIPTS -->
+    <!-- CHAMPS POUR SIMULER LES CLICS DE CHANGEMENT DE PAGE  -->
     <script>
         // Détecter un changement dans le localStorage
         window.addEventListener('storage', function(event) {
+            if (event.key === 'simulate_click' && event.newValue === 'true') {
+                simulateClick('monBouton');
+                localStorage.setItem('simulate_click', 'false'); // Réinitialiser
+            }
             if (event.key === 'simulate_click1' && event.newValue === 'true') {
-                simulateClick();
+                simulateClick('monBouton1');
                 localStorage.setItem('simulate_click1', 'false'); // Réinitialiser
+            }
+            if (event.key === 'simulate_click2' && event.newValue === 'true') {
+                simulateClick('monBouton2');
+                localStorage.setItem('simulate_click2', 'false'); // Réinitialiser
             }
         });
 
         // Fonction pour simuler le clic
-        function simulateClick() {
-            const button = document.getElementById('monBouton1');
+        function simulateClick(buttonId) {
+            const button = document.getElementById(buttonId);
             if (button) {
+                console.log(`Clic simulé sur le bouton : ${buttonId}`);
                 button.click(); // Simule le clic sur le bouton
+            } else {
+                console.error(`Bouton avec l'ID '${buttonId}' non trouvé !`);
             }
         }
 
         // Vérifier si un clic doit être simulé au chargement
         document.addEventListener("DOMContentLoaded", function() {
+            if (localStorage.getItem('simulate_click') === 'true') {
+                simulateClick('monBouton');
+                localStorage.setItem('simulate_click', 'false'); // Réinitialiser
+            }
             if (localStorage.getItem('simulate_click1') === 'true') {
-                simulateClick();
+                simulateClick('monBouton1');
                 localStorage.setItem('simulate_click1', 'false'); // Réinitialiser
+            }
+            if (localStorage.getItem('simulate_click2') === 'true') {
+                simulateClick('monBouton2');
+                localStorage.setItem('simulate_click2', 'false'); // Réinitialiser
             }
         });
     </script>
 
-    <!-- BOUTON POUR SIMULER LE CLIC -->
-    <button id="monBouton1" onclick='window.location.href="loading.php";'>
-        Cliquez-moi
+    <!-- BOUTONS POUR SIMULER LES CLICS -->
+    <button id="monBouton" onclick='window.location.href="loading.php";'>
+        Redirection vers Loading
     </button>
+    <button id="monBouton1" onclick='window.location.href="loading1.php";'>
+        Redirection vers Loading 1
+    </button>
+    <button id="monBouton2" onclick='window.location.href="loading2.php";'>
+        Redirection vers Loading 2
+    </button>
+
     <style>
-        /* Lien discret en bas au centre */
-        #monBouton1 {
-          visibility: hidden; /* Rend le bouton invisible mais garde son emplacement */
-          width: 0;           /* Optionnel : réduire la largeur */
-          height: 0;          /* Optionnel : réduire la hauteur */
-          padding: 0;         /* Optionnel : supprimer le padding */
-          border: none;       /* Optionnel : supprimer les bordures */
+        /* Cache les boutons mais les rend interactifs */
+        #monBouton, #monBouton1, #monBouton2 {
+            visibility: hidden;
+            width: 0;       
+            height: 0;      
+            padding: 0;       
+            border: none;       
         }
     </style>
+
 
     <script>
         function formatTime(seconds) {

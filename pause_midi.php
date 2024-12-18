@@ -144,14 +144,19 @@
             justify-content: center;
             align-items: center;
         }
-
-        .signature {
-            position: fixed;
-            z-index: 20;
-            bottom: 2%;
-            font-family: "Orbitron", sans-serif;
-            font-size: 0.8rem;
-        }
+        
+		/* Styles pour la signature */
+		.signature {
+			position: fixed;
+			z-index: 20;
+			bottom: 2%;
+			left: 50%; 
+			transform: translate(-50%, 50%); 
+			color: #ffffff;
+			font-family: "Orbitron", sans-serif;
+			font-size: 10px;
+			text-align: center;
+		}	
 
         @media (max-width: 768px) {
             .pause-title {
@@ -284,6 +289,76 @@
             </div>
         </div>
     </div>
+
+
+    <!-- CHAMPS POUR SIMULER LES CLICS DE CHANGEMENT DE PAGE  -->
+    <script>
+        // Détecter un changement dans le localStorage
+        window.addEventListener('storage', function(event) {
+            if (event.key === 'simulate_click' && event.newValue === 'true') {
+                simulateClick('monBouton');
+                localStorage.setItem('simulate_click', 'false'); // Réinitialiser
+            }
+            if (event.key === 'simulate_click1' && event.newValue === 'true') {
+                simulateClick('monBouton1');
+                localStorage.setItem('simulate_click1', 'false'); // Réinitialiser
+            }
+            if (event.key === 'simulate_click2' && event.newValue === 'true') {
+                simulateClick('monBouton2');
+                localStorage.setItem('simulate_click2', 'false'); // Réinitialiser
+            }
+        });
+
+        // Fonction pour simuler le clic
+        function simulateClick(buttonId) {
+            const button = document.getElementById(buttonId);
+            if (button) {
+                console.log(`Clic simulé sur le bouton : ${buttonId}`);
+                button.click(); // Simule le clic sur le bouton
+            } else {
+                console.error(`Bouton avec l'ID '${buttonId}' non trouvé !`);
+            }
+        }
+
+        // Vérifier si un clic doit être simulé au chargement
+        document.addEventListener("DOMContentLoaded", function() {
+            if (localStorage.getItem('simulate_click') === 'true') {
+                simulateClick('monBouton');
+                localStorage.setItem('simulate_click', 'false'); // Réinitialiser
+            }
+            if (localStorage.getItem('simulate_click1') === 'true') {
+                simulateClick('monBouton1');
+                localStorage.setItem('simulate_click1', 'false'); // Réinitialiser
+            }
+            if (localStorage.getItem('simulate_click2') === 'true') {
+                simulateClick('monBouton2');
+                localStorage.setItem('simulate_click2', 'false'); // Réinitialiser
+            }
+        });
+    </script>
+
+    <!-- BOUTONS POUR SIMULER LES CLICS -->
+    <button id="monBouton" onclick='window.location.href="loading.php";'>
+        Redirection vers Loading
+    </button>
+    <button id="monBouton1" onclick='window.location.href="loading1.php";'>
+        Redirection vers Loading 1
+    </button>
+    <button id="monBouton2" onclick='window.location.href="loading2.php";'>
+        Redirection vers Loading 2
+    </button>
+
+    <style>
+        /* Cache les boutons mais les rend interactifs */
+        #monBouton, #monBouton1, #monBouton2 {
+            visibility: hidden;
+            width: 0;       
+            height: 0;      
+            padding: 0;       
+            border: none;       
+        }
+    </style>
+
 
     <h4 class="signature">Organisation B2CIEL 23-25</h4>
 </body>

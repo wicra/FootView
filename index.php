@@ -393,9 +393,10 @@
         <button class="control-btn" onclick="previousMatch()">Match Précéd</button>
         <button class="control-btn" onclick="nextMatch()">Match Suivant</button>
         
-
         <button class="control-btn" onclick="triggerClickOnPageA()">Vue User</button>
         <button class="control-btn" onclick="triggerClickOnPageB()">Vue Plan</button>
+		<button class="control-btn" onclick="triggerClickOnPageC()">Vue Pause midi</button>
+
       </div>
     </div>
 
@@ -415,6 +416,10 @@
         function triggerClickOnPageB() {
             // Déclencher l'événement dans le localStorage
             localStorage.setItem('simulate_click1', 'true');
+        }
+		function triggerClickOnPageC() {
+            // Déclencher l'événement dans le localStorage
+            localStorage.setItem('simulate_click2', 'true');
         }
     </script>
   </body>
