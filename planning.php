@@ -55,8 +55,8 @@
         .container {
         display: flex;
         align-items: stretch;
-        width: 95%;
-        max-width: 1200px;
+        width: 100%;
+        max-width: 1800px;
         background: rgba(0, 0, 0, 0.3);
         padding: 2vh 2vw 2vh 0;
         border-radius: 30px;
@@ -115,7 +115,7 @@
             overflow: hidden;
         }
         th, td {
-            padding: 10px;
+            padding: 18px;
             text-align: center;
             color: white;
             border-bottom: 1px solid rgba(255, 255, 255, 0.1);
