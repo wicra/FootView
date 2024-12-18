@@ -144,7 +144,7 @@
 			border: none; 
 		}
 		
-   		/* Styles pour la signature */
+   		/* Styles pour la signature 
 		.signature {
 			position: fixed;
 			z-index: 20;
@@ -155,7 +155,7 @@
 			font-family: "Orbitron", sans-serif;
 			font-size: 10px;
 			text-align: center;
-		}	
+		}	*/
     </style>
 </head>
 <body>
@@ -172,6 +172,7 @@
         ></path>
     </svg>
 
+	<!-- 
     <script>
         // Détecter un changement dans le localStorage
         window.addEventListener('storage', function(event) {
@@ -200,8 +201,9 @@
 
     </script>
 
-    <!-- Bouton qui peut être cliqué automatiquement -->
+    
     <button id="monBouton" onclick='window.location.href="loading1.php";'></button>
+	-->
 
     <div class="container">
       <div class="match-header">

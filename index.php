@@ -395,7 +395,7 @@
         
 
         <button class="control-btn" onclick="triggerClickOnPageA()">Vue User</button>
-        <button class="control-btn" onclick="triggerClickOnPageB()">Vue Class</button>
+        <button class="control-btn" onclick="triggerClickOnPageB()">Vue Plan</button>
       </div>
     </div>
 

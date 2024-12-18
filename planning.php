@@ -218,6 +218,48 @@
         </table>
     </div>
 
+
+    <!-- BOUTON POUR SIMULER LE CLIC -->
+    <script>
+        // Détecter un changement dans le localStorage
+        window.addEventListener('storage', function(event) {
+            if (event.key === 'simulate_click' && event.newValue === 'true') {
+                simulateClick();
+                localStorage.setItem('simulate_click', 'false'); // Réinitialiser
+            }
+        });
+
+        // Fonction pour simuler le clic
+        function simulateClick() {
+            const button = document.getElementById('monBouton');
+            if (button) {
+                button.click(); // Simule le clic sur le bouton
+            }
+        }
+
+        // Vérifier si un clic doit être simulé au chargement
+        document.addEventListener("DOMContentLoaded", function() {
+            if (localStorage.getItem('simulate_click') === 'true') {
+                simulateClick();
+                localStorage.setItem('simulate_click', 'false'); // Réinitialiser
+            }
+        });
+
+
+    </script>
+
+    <!-- BOUTON POUR SIMULER LE CLIC -->
+    <button id="monBouton" onclick='window.location.href="loading1.php";'></button>
+    <style>
+        #monBouton {
+          visibility: hidden; 
+          width: 0;     
+          height: 0;         
+          padding: 0;      
+          border: none;   
+        }
+    </style>
+
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         const matchTableBody = document.getElementById('matchTableBody');

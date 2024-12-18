@@ -262,7 +262,7 @@
         <!-- SCRIPTS -->
         <script>
             setTimeout(function() {
-                window.location.href = "classement.php";
+                window.location.href = "planning.php";
             }, 1500);
         </script>
     </body>
