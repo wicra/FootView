@@ -1,0 +1,186 @@
+{
+    "matches": [
+        {
+            "id": 1,
+            "team1": "B2 CIEL",
+            "team2": "DBC",
+            "score1": 3,
+            "score2": 3,
+            "played": true
+        },
+        {
+            "id": 2,
+            "team1": "B1 CIEL",
+            "team2": "B2 ET",
+            "score1": 2,
+            "score2": 3,
+            "played": true
+        },
+        {
+            "id": 3,
+            "team1": "B2 CIEL",
+            "team2": "UB1 GCF",
+            "score1": 0,
+            "score2": 1,
+            "played": true
+        },
+        {
+            "id": 4,
+            "team1": "B1 CIEL",
+            "team2": "B1 GCF",
+            "score1": 3,
+            "score2": 3,
+            "played": true
+        },
+        {
+            "id": 5,
+            "team1": "B2 CIEL",
+            "team2": "B1 MSEF",
+            "score1": 0,
+            "score2": 1,
+            "played": true
+        },
+        {
+            "id": 6,
+            "team1": "B1 CIEL",
+            "team2": "PROF",
+            "score1": 3,
+            "score2": 2,
+            "played": true
+        },
+        {
+            "id": 7,
+            "team1": "DBC",
+            "team2": "UB1 GCF",
+            "score1": 0,
+            "score2": 1,
+            "played": true
+        },
+        {
+            "id": 8,
+            "team1": "B2 ET",
+            "team2": "B1 GCF",
+            "score1": 0,
+            "score2": 1,
+            "played": true
+        },
+        {
+            "id": 9,
+            "team1": "DBC",
+            "team2": "B1 MSEF",
+            "score1": 0,
+            "score2": 1,
+            "played": true
+        },
+        {
+            "id": 10,
+            "team1": "B2 ET",
+            "team2": "PROF",
+            "score1": 0,
+            "score2": 1,
+            "played": false
+        },
+        {
+            "id": 11,
+            "team1": "UB1 GCF",
+            "team2": "B1 MSEF",
+            "score1": 0,
+            "score2": 1,
+            "played": false
+        },
+        {
+            "id": 12,
+            "team1": "UB1 GCF",
+            "team2": "PROF",
+            "score1": 1,
+            "score2": 1,
+            "played": false
+        }
+    ],
+    "currentMatch": 10
+}
+
+
+
+// QUARTER-FINALES
+
+{
+    "matches": [
+        {
+            "id": 1,
+            "team1": "B2 CIEL",
+            "team2": "DBC",
+            "score1": 0,
+            "score2": 0,
+            "played": false
+        },
+        
+        {
+            "id": 2,
+            "team1": "B1 CIEL",
+            "team2": "B2 ET",
+            "score1": 0,
+            "score2": 0,
+            "played": false
+        },
+        {
+            "id": 3,
+            "team1": "B2 CIEL",
+            "team2": "UB1 GCF",
+            "score1": 0,
+            "score2": 1,
+            "played": false
+        },
+        {
+            "id": 4,
+            "team1": "B1 CIEL",
+            "team2": "B1 GCF",
+            "score1": 0,
+            "score2": 0,
+            "played": false
+        }
+    ],
+    "currentMatch": 7
+}
+
+
+// DEMI-FINALES
+
+{
+    "matches": [
+        {
+            "id": 1,
+            "team1": "B2 CIEL",
+            "team2": "DBC",
+            "score1": 3,
+            "score2": 3,
+            "played": false
+        },
+        
+        {
+            "id": 2,
+            "team1": "B1 CIEL",
+            "team2": "B2 ET",
+            "score1": 2,
+            "score2": 3,
+            "played": false
+        }
+    ],
+    "currentMatch": 7
+}
+
+//FINALES
+
+{
+    "matches": [
+        {
+            "id": 1,
+            "team1": "B2 CIEL",
+            "team2": "DBC",
+            "score1": 3,
+            "score2": 3,
+            "played": false
+        }
+    ],
+    "currentMatch": 7
+}
