@@ -53,16 +53,50 @@
             color: white;
         }
         .container {
-            width: 95%;
-            max-width: 1200px;
-            background: rgba(0, 0, 0, 0.3);
-            padding: 2vh 2vw;
-            border-radius: 30px;
-            backdrop-filter: blur(10px);
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-            transform: translateY(0);
-            transition: transform 0.3s ease;
-        }
+        display: flex;
+        align-items: stretch;
+        width: 95%;
+        max-width: 1200px;
+        background: rgba(0, 0, 0, 0.3);
+        padding: 2vh 2vw 2vh 0;
+        border-radius: 30px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    }
+
+    .vertical-title-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        writing-mode: vertical-rl;
+        text-orientation: mixed;
+        transform: rotate(180deg);
+        background: rgba(0, 0, 0, 0.2);
+        padding: 20px 10px;
+        margin: 0px 21px;
+        min-width: 80px;
+        border-radius: 20px;
+    }
+
+    .match-title {
+        font-size: 2rem;
+        font-weight: 900;
+        font-family: "Permanent Marker", cursive;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: 2px;
+        white-space: nowrap;
+    }
+
+    .table-container {
+        flex-grow: 1;
+        overflow-x: auto;
+    }
+
+    #matchTable {
+        width: 100%;
+        border-collapse: collapse;
+    }
         .container:hover {
             transform: translateY(-5px);
         }
@@ -71,15 +105,7 @@
             margin-bottom: 2px;
             position: relative;
         }
-        .match-title {
-            font-size: 2rem;
-            font-weight: 900;
-            font-family: "Permanent Marker", cursive;
-            text-transform: uppercase;
-            color: #ffffff;
-            text-shadow: 0 0 10px rgba(255, 69, 0, 0.3);
-            margin-bottom: 1rem;
-        }
+        
         table {
             width: 100%;
             border-collapse: separate;
@@ -171,7 +197,7 @@
     </svg>
 
     <div class="container">
-        <div class="match-header">
+        <div class="vertical-title-container">
             <h1 class="match-title">Planning des Matchs</h1>
         </div>
 
